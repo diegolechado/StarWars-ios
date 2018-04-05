@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QXC-Lk-SuN">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Stjldbl1.ttf">
+            <string>StarJediLogoDoubleLine1</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="T6B-j7-sKx">
+            <objects>
+                <viewController id="QXC-Lk-SuN" customClass="HomeViewController" customModule="StarWars" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kbx-56-viN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Mo-Ow-DCK" customClass="HomeView" customModule="StarWars" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star_Wars_logo" translatesAutoresizingMaskIntoConstraints="NO" id="5Va-aZ-FFo">
+                                        <rect key="frame" x="50" y="224" width="220" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Plf-bu-gPn"/>
+                                            <constraint firstAttribute="width" constant="220" id="k9i-tt-tOc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <tableView clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="170" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JjB-RB-AH5">
+                                        <rect key="frame" x="0.0" y="160" width="320" height="388"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuCell" rowHeight="114" id="PfI-f6-bZF" customClass="HomeMenuTableViewCell" customModule="StarWars" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="320" height="114"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PfI-f6-bZF" id="tNB-Dg-FdX">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="113.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ships" translatesAutoresizingMaskIntoConstraints="NO" id="JPy-V8-0M3">
+                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="113.5"/>
+                                                        </imageView>
+                                                        <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN4-cn-Mzk" userLabel="opacityView">
+                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="113.5"/>
+                                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAVES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knr-qn-4Xp">
+                                                            <rect key="frame" x="115.5" y="38" width="89.5" height="37"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="31"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="iN4-cn-Mzk" firstAttribute="top" secondItem="tNB-Dg-FdX" secondAttribute="top" id="71w-ne-kW3"/>
+                                                        <constraint firstItem="knr-qn-4Xp" firstAttribute="centerX" secondItem="tNB-Dg-FdX" secondAttribute="centerX" id="8kL-76-Nm7"/>
+                                                        <constraint firstItem="JPy-V8-0M3" firstAttribute="leading" secondItem="tNB-Dg-FdX" secondAttribute="leading" id="HAj-GM-uuh"/>
+                                                        <constraint firstAttribute="bottom" secondItem="iN4-cn-Mzk" secondAttribute="bottom" id="LCk-Yd-0Y7"/>
+                                                        <constraint firstItem="JPy-V8-0M3" firstAttribute="top" secondItem="tNB-Dg-FdX" secondAttribute="top" id="VkF-Fr-KLS"/>
+                                                        <constraint firstItem="knr-qn-4Xp" firstAttribute="centerY" secondItem="tNB-Dg-FdX" secondAttribute="centerY" id="agr-Zh-uC7"/>
+                                                        <constraint firstAttribute="trailing" secondItem="iN4-cn-Mzk" secondAttribute="trailing" id="dDH-aA-HMN"/>
+                                                        <constraint firstAttribute="bottom" secondItem="JPy-V8-0M3" secondAttribute="bottom" id="qI4-9I-AMR"/>
+                                                        <constraint firstItem="iN4-cn-Mzk" firstAttribute="leading" secondItem="tNB-Dg-FdX" secondAttribute="leading" id="udC-Ot-ycI"/>
+                                                        <constraint firstAttribute="trailing" secondItem="JPy-V8-0M3" secondAttribute="trailing" id="wS3-0n-TlR"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="backgroundImage" destination="JPy-V8-0M3" id="qYy-LA-ljD"/>
+                                                    <outlet property="titleLabel" destination="knr-qn-4Xp" id="emH-Uf-HzK"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5Va-aZ-FFo" firstAttribute="centerY" secondItem="5Mo-Ow-DCK" secondAttribute="centerY" id="IF4-lY-2Or"/>
+                                    <constraint firstItem="JjB-RB-AH5" firstAttribute="leading" secondItem="5Mo-Ow-DCK" secondAttribute="leading" id="Pbz-V6-Tjz"/>
+                                    <constraint firstAttribute="bottom" secondItem="JjB-RB-AH5" secondAttribute="bottom" id="TcO-Na-Nf8"/>
+                                    <constraint firstItem="JjB-RB-AH5" firstAttribute="top" secondItem="5Mo-Ow-DCK" secondAttribute="top" constant="160" id="kdF-Lu-cg9"/>
+                                    <constraint firstAttribute="trailing" secondItem="JjB-RB-AH5" secondAttribute="trailing" id="qci-nc-pFM"/>
+                                    <constraint firstItem="5Va-aZ-FFo" firstAttribute="centerX" secondItem="5Mo-Ow-DCK" secondAttribute="centerX" id="t7w-7C-KaY"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="logoImageView" destination="5Va-aZ-FFo" id="Zoy-6C-4hz"/>
+                                    <outlet property="tableView" destination="JjB-RB-AH5" id="VwD-eC-ctc"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Mo-Ow-DCK" firstAttribute="top" secondItem="VNG-7K-BAY" secondAttribute="top" id="KAk-Ep-to4"/>
+                            <constraint firstItem="5Mo-Ow-DCK" firstAttribute="leading" secondItem="VNG-7K-BAY" secondAttribute="leading" id="Z04-El-fF7"/>
+                            <constraint firstItem="VNG-7K-BAY" firstAttribute="trailing" secondItem="5Mo-Ow-DCK" secondAttribute="trailing" id="aIP-rO-Dr8"/>
+                            <constraint firstItem="VNG-7K-BAY" firstAttribute="bottom" secondItem="5Mo-Ow-DCK" secondAttribute="bottom" id="lPN-ov-NYe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VNG-7K-BAY"/>
+                    </view>
+                    <connections>
+                        <outlet property="homeView" destination="5Mo-Ow-DCK" id="NGJ-W1-oWf"/>
+                        <segue destination="zXG-PL-8ne" kind="showDetail" identifier="segueChars" id="ZDC-ov-E2f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pw9-VA-4do" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-976.875" y="-97.5"/>
+        </scene>
+        <!--Characters View Controller-->
+        <scene sceneID="Fu8-9C-g6J">
+            <objects>
+                <viewController id="zXG-PL-8ne" customClass="CharactersViewController" customModule="StarWars" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aWC-pr-Bfs" customClass="CharacterView" customModule="StarWars" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="personagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLo-jl-BAN">
+                                <rect key="frame" x="61" y="40" width="198" height="33"/>
+                                <fontDescription key="fontDescription" name="StarJediLogoDoubleLine1" family="Star Jedi Logo DoubleLine1" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TTz-L7-K4y">
+                                <rect key="frame" x="0.0" y="73" width="320" height="465"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="loU-LX-ikK">
+                                    <size key="itemSize" width="220" height="400"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CharactersCell" id="JpY-d0-2Px" customClass="CharactersCollectionViewCell" customModule="StarWars" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="32.5" width="220" height="400"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="220" height="400"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yf-96-n0x">
+                                                    <rect key="frame" x="89" y="189.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.2813406128" green="0.56284575429999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="2yf-96-n0x" firstAttribute="centerX" secondItem="JpY-d0-2Px" secondAttribute="centerX" id="A0H-6b-k2Y"/>
+                                            <constraint firstItem="2yf-96-n0x" firstAttribute="centerX" secondItem="JpY-d0-2Px" secondAttribute="centerX" id="DRY-55-fgE"/>
+                                            <constraint firstItem="2yf-96-n0x" firstAttribute="centerY" secondItem="JpY-d0-2Px" secondAttribute="centerY" id="FUU-dV-HeI"/>
+                                            <constraint firstItem="2yf-96-n0x" firstAttribute="centerY" secondItem="JpY-d0-2Px" secondAttribute="centerY" id="xjK-6r-5Ma"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="zXG-PL-8ne" id="wP0-Lf-lcd"/>
+                                    <outlet property="delegate" destination="zXG-PL-8ne" id="25R-H6-IG5"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7hE-qn-TT8" firstAttribute="bottom" secondItem="TTz-L7-K4y" secondAttribute="bottom" constant="30" id="CAE-9X-FdP"/>
+                            <constraint firstItem="iLo-jl-BAN" firstAttribute="top" secondItem="7hE-qn-TT8" secondAttribute="top" constant="20" id="DmE-lI-1cY"/>
+                            <constraint firstItem="iLo-jl-BAN" firstAttribute="centerX" secondItem="aWC-pr-Bfs" secondAttribute="centerX" id="Iae-n3-OLS"/>
+                            <constraint firstItem="7hE-qn-TT8" firstAttribute="trailing" secondItem="TTz-L7-K4y" secondAttribute="trailing" id="R7Y-MO-EYy"/>
+                            <constraint firstItem="TTz-L7-K4y" firstAttribute="leading" secondItem="7hE-qn-TT8" secondAttribute="leading" id="UB2-g3-hkd"/>
+                            <constraint firstItem="TTz-L7-K4y" firstAttribute="top" secondItem="iLo-jl-BAN" secondAttribute="bottom" id="v1Q-5O-DAN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7hE-qn-TT8"/>
+                        <connections>
+                            <outlet property="characterCollectionView" destination="TTz-L7-K4y" id="tof-dV-DZn"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="charactersView" destination="aWC-pr-Bfs" id="1LV-rM-ubM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I3r-nd-t4v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-56" y="-143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Star_Wars_logo" width="1837" height="789"/>
+        <image name="ships" width="600" height="300"/>
+    </resources>
+</document>
