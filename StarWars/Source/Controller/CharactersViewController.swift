@@ -12,8 +12,23 @@ import UIKit
 class CharactersViewController: UIViewController {
     
     @IBOutlet var charactersView: CharacterView!
+    var characters: [Character]?
+    
+    private lazy var business = {
+        return CharactersBusiness()
+    }()
     
     override func viewDidLoad() {
+        fetchCharacters()
+    }
+    
+    func fetchCharacters() {
+        business.getCharacters(successCompletion: { [weak self] (characters) in
+            self?.characters = characters
+            self?.charactersView.characterCollectionView.reloadData()
+        }) { (error) in
+            
+        }
     }
 }
 
@@ -30,6 +45,6 @@ extension CharactersViewController: UICollectionViewDelegate, UICollectionViewDa
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 5
+        return (self.characters != nil) ? self.characters!.count : 0
     }
 }

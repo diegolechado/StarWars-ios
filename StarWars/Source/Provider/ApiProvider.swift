@@ -10,13 +10,14 @@ import Alamofire
 
 /// Default Completion Callback
 
-typealias SuccessCallback = (_ data: AnyObject) -> Swift.Void
+typealias SuccessCallback = (_ data: Data?) -> Swift.Void
 typealias FailureCallback = (_ error: Error) -> Swift.Void
 
 /// Api Provider to manage backend access
-internal class BaseApiProvider {
+internal class ApiProvider {
     
-    fileprivate static let kIApiProviderUrl = "https://swapi.co/api/"
+    //fileprivate static let kIApiProviderUrl = "https://swapi.co/api/"
+    fileprivate static let apiProviderUrl = "http://localhost:5000/"
     
     static var headerId: String?
     
@@ -26,11 +27,11 @@ internal class BaseApiProvider {
     
     // MARK: - Static Methods
     static func getWith(urlExtension: String, successBlock: @escaping SuccessCallback, failureBlock: @escaping FailureCallback) {
-        Alamofire.request(kIApiProviderUrl + urlExtension).responseJSON { (data) in
-            let result = data.result
+        Alamofire.request(apiProviderUrl + urlExtension).responseJSON { (response) in
+            let result = response.result
             switch (result) {
-            case .success(let data):
-                successBlock(data as AnyObject)
+            case .success(_):
+                successBlock(response.data)
                 break
             case .failure(let error):
                 failureBlock(error)
@@ -47,12 +48,12 @@ internal class BaseApiProvider {
         if let headerId = self.headerId {
             headers["state_id"] = headerId
         }
-        Alamofire.request(kIApiProviderUrl + urlExtension, method: .post, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { (data) in
-            let result = data.result
-            headerId = data.response?.allHeaderFields["state_id"] as? String
+        Alamofire.request(apiProviderUrl + urlExtension, method: .post, parameters: params, encoding: JSONEncoding.default, headers: headers).responseJSON { (responseData) in
+            let result = responseData.result
+            headerId = responseData.response?.allHeaderFields["state_id"] as? String
             switch (result) {
-            case .success(let data):
-                successBlock(data as AnyObject)
+            case .success(_):
+                successBlock(responseData.data)
                 break
             case .failure(let error):
                 failureBlock(error)
