@@ -8,8 +8,14 @@
 
 import Foundation
 import UIKit
+import Kingfisher
+import Hero
 
 class CharactersCollectionViewCell: UICollectionViewCell {
+    
+    @IBOutlet weak var charactersImage: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         
@@ -19,6 +25,19 @@ class CharactersCollectionViewCell: UICollectionViewCell {
         layer.shadowOffset = CGSize(width: 2
             , height: 4)
         clipsToBounds = false
+    }
+    
+    func bind(character: Character){
+        hero.id = character.id
+        
+        self.nameLabel.text = character.name
+        
+        if let imageUrl = character.image {
+            let url = URL(string: ApiProvider.imagesBaseUrl + imageUrl)
+            self.charactersImage.kf.setImage(with: url)
+        }else{
+            self.charactersImage.image = nil
+        }
     }
 }
 

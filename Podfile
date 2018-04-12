@@ -3,6 +3,8 @@ use_frameworks!
 
 target 'StarWars' do
     pod 'Alamofire'
+    pod 'Kingfisher', '~> 4.0'
+    pod 'Hero', '~> 1.1'
 end
 
 target 'StarWarsTests' do

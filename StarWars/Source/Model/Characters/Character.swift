@@ -22,6 +22,7 @@ struct Character: Codable {
     var mass: String?
     var homeworld: Int?
     var birthYear: String?
+    var id: String?
     
     enum CodingKeys: String, CodingKey {
         case image
@@ -36,5 +37,6 @@ struct Character: Codable {
         case mass
         case homeworld
         case birthYear = "birth_year"
+        case id
     }
 }

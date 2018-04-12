@@ -19,6 +19,8 @@ internal class ApiProvider {
     //fileprivate static let kIApiProviderUrl = "https://swapi.co/api/"
     fileprivate static let apiProviderUrl = "http://localhost:5000/"
     
+    static let imagesBaseUrl = "http://localhost:5000/img/"
+    
     static var headerId: String?
     
     // MARK: - Initializers

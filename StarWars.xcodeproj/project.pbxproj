@@ -10,6 +10,8 @@
 		39037DC0207454A200B614E1 /* Stjldbl1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39037DBF207454A200B614E1 /* Stjldbl1.ttf */; };
 		3923DBC7206B21B4005DC03E /* HomeMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3923DBC6206B21B4005DC03E /* HomeMenuTableViewCell.swift */; };
 		3923DBC9206B238B005DC03E /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3923DBC8206B238B005DC03E /* MenuItem.swift */; };
+		395141B0207EBB71008DEC71 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395141AF207EBB71008DEC71 /* CharacterDetailViewController.swift */; };
+		395141B3207EBBC8008DEC71 /* CharacterDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395141B2207EBBC8008DEC71 /* CharacterDetailsView.swift */; };
 		39741D32207BE2B000FD4DC8 /* CharactersApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39741D31207BE2B000FD4DC8 /* CharactersApiProtocol.swift */; };
 		39741D34207BE53100FD4DC8 /* CharactersApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39741D33207BE53100FD4DC8 /* CharactersApiProvider.swift */; };
 		39741D38207BE7FA00FD4DC8 /* CharactersBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39741D37207BE7FA00FD4DC8 /* CharactersBusiness.swift */; };
@@ -58,6 +60,8 @@
 		39037DBF207454A200B614E1 /* Stjldbl1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Stjldbl1.ttf; sourceTree = "<group>"; };
 		3923DBC6206B21B4005DC03E /* HomeMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuTableViewCell.swift; sourceTree = "<group>"; };
 		3923DBC8206B238B005DC03E /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		395141AF207EBB71008DEC71 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		395141B2207EBBC8008DEC71 /* CharacterDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsView.swift; sourceTree = "<group>"; };
 		39741D31207BE2B000FD4DC8 /* CharactersApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersApiProtocol.swift; sourceTree = "<group>"; };
 		39741D33207BE53100FD4DC8 /* CharactersApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersApiProvider.swift; sourceTree = "<group>"; };
 		39741D37207BE7FA00FD4DC8 /* CharactersBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersBusiness.swift; sourceTree = "<group>"; };
@@ -134,10 +138,18 @@
 			children = (
 				39931B0F2059EEFF00A3DAE8 /* HomeView.swift */,
 				3923DBC6206B21B4005DC03E /* HomeMenuTableViewCell.swift */,
-				39789EA02076D71800F6C1A9 /* CharactersView.swift */,
-				39789EA22076D8E600F6C1A9 /* CharactersCollectionViewCell.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		395141B1207EBB94008DEC71 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				39789EA02076D71800F6C1A9 /* CharactersView.swift */,
+				39789EA22076D8E600F6C1A9 /* CharactersCollectionViewCell.swift */,
+				395141B2207EBBC8008DEC71 /* CharacterDetailsView.swift */,
+			);
+			path = Characters;
 			sourceTree = "<group>";
 		};
 		39741D30207BE29300FD4DC8 /* Characters */ = {
@@ -294,6 +306,7 @@
 			children = (
 				39D516AD20574F990030ADB6 /* HomeViewController.swift */,
 				39789E9E2076D70800F6C1A9 /* CharactersViewController.swift */,
+				395141AF207EBB71008DEC71 /* CharacterDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -301,6 +314,7 @@
 		39D516DF205750310030ADB6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				395141B1207EBB94008DEC71 /* Characters */,
 				3923DBC5206B217C005DC03E /* Home */,
 			);
 			path = View;
@@ -494,10 +508,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-StarWars/Pods-StarWars-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -654,8 +672,10 @@
 				39789EA12076D71800F6C1A9 /* CharactersView.swift in Sources */,
 				3923DBC9206B238B005DC03E /* MenuItem.swift in Sources */,
 				39D516AC20574F990030ADB6 /* AppDelegate.swift in Sources */,
+				395141B0207EBB71008DEC71 /* CharacterDetailViewController.swift in Sources */,
 				39741D3B207BEB4800FD4DC8 /* CharactersResponse.swift in Sources */,
 				39D516E3205750B70030ADB6 /* ApiProvider.swift in Sources */,
+				395141B3207EBBC8008DEC71 /* CharacterDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

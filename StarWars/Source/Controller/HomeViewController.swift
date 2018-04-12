@@ -29,8 +29,17 @@ class HomeViewController: UIViewController {
         menuItens = menuBusiness.getMenu()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        setupNavigationBar()
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         self.homeView.alignLogo()
+    }
+    
+    func setupNavigationBar() {
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:String(), style:.plain, target:nil, action:nil)
     }
 }
 
