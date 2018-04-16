@@ -16,10 +16,10 @@ typealias FailureCallback = (_ error: Error) -> Swift.Void
 /// Api Provider to manage backend access
 internal class ApiProvider {
     
-    //fileprivate static let kIApiProviderUrl = "https://swapi.co/api/"
-    fileprivate static let apiProviderUrl = "http://localhost:5000/"
+    fileprivate static let apiProviderUrl = "https://star-wars-diegofl.herokuapp.com/"
+    //fileprivate static let apiProviderUrl = "http://localhost:5000/"
     
-    static let imagesBaseUrl = "http://localhost:5000/img/"
+    static let imagesBaseUrl = apiProviderUrl + "img/"
     
     static var headerId: String?
     

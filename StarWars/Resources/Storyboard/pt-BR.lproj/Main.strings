@@ -1,0 +1,39 @@
+
+/* Class = "UILabel"; text = "LUKE SKYWALKER DA SILVA"; ObjectID = "2yf-96-n0x"; */
+"2yf-96-n0x.text" = "LUKE SKYWALKER DA SILVA";
+
+/* Class = "UILabel"; text = "MASS"; ObjectID = "3am-Jf-W9S"; */
+"3am-Jf-W9S.text" = "PESO";
+
+/* Class = "UILabel"; text = "NAME"; ObjectID = "BAJ-Bk-zGZ"; */
+"BAJ-Bk-zGZ.text" = "NOME";
+
+/* Class = "UILabel"; text = "BIRTH YEAR"; ObjectID = "Grx-z7-nvq"; */
+"Grx-z7-nvq.text" = "ANO DE NASCIMENTO";
+
+/* Class = "UINavigationItem"; title = "Home"; ObjectID = "Orf-Qf-gwp"; */
+"Orf-Qf-gwp.title" = "Início";
+
+/* Class = "UIButton"; normalTitle = "fechar"; ObjectID = "TN1-Ma-Ce3"; */
+"TN1-Ma-Ce3.normalTitle" = "close";
+
+/* Class = "UILabel"; text = "HEIGHT"; ObjectID = "WpI-Jr-eGx"; */
+"WpI-Jr-eGx.text" = "PESO";
+
+/* Class = "UILabel"; text = "NAME"; ObjectID = "Z35-hm-2kU"; */
+"Z35-hm-2kU.text" = "NOME";
+
+/* Class = "UILabel"; text = "MASS"; ObjectID = "b0c-ZC-vqn"; */
+"b0c-ZC-vqn.text" = "PESO";
+
+/* Class = "UINavigationItem"; title = "Personagens"; ObjectID = "f3M-Nb-3v2"; */
+"f3M-Nb-3v2.title" = "Personagens";
+
+/* Class = "UILabel"; text = "NAVES"; ObjectID = "knr-qn-4Xp"; */
+"knr-qn-4Xp.text" = "SHIPS";
+
+/* Class = "UILabel"; text = "HEIGHT"; ObjectID = "t7e-wX-Tb5"; */
+"t7e-wX-Tb5.text" = "PESO";
+
+/* Class = "UILabel"; text = "BIRTH YEAR"; ObjectID = "w1L-pq-mOY"; */
+"w1L-pq-mOY.text" = "ANO DE NASCIMENTO";

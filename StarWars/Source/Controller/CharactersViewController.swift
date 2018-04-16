@@ -35,11 +35,15 @@ class CharactersViewController: UIViewController {
     }
     
     func fetchCharacters() {
+        let loadingView = LoadingView(frame: self.view.frame)
+        loadingView.show(view: self.view)
+        
         business.getCharacters(successCompletion: { [weak self] (characters) in
+            loadingView.close()
             self?.characters = characters
             self?.charactersView.characterCollectionView.reloadData()
         }) { (error) in
-            
+            loadingView.close()
         }
     }
     

@@ -5,6 +5,7 @@ target 'StarWars' do
     pod 'Alamofire'
     pod 'Kingfisher', '~> 4.0'
     pod 'Hero', '~> 1.1'
+    pod 'lottie-ios'
 end
 
 target 'StarWarsTests' do

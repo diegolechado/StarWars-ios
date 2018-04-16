@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39036948208561D000E96E63 /* lightsaber.json in Resources */ = {isa = PBXBuildFile; fileRef = 39036946208561D000E96E63 /* lightsaber.json */; };
+		39036949208561D000E96E63 /* lightsaber.aep in Resources */ = {isa = PBXBuildFile; fileRef = 39036947208561D000E96E63 /* lightsaber.aep */; };
 		39037DC0207454A200B614E1 /* Stjldbl1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39037DBF207454A200B614E1 /* Stjldbl1.ttf */; };
 		3923DBC7206B21B4005DC03E /* HomeMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3923DBC6206B21B4005DC03E /* HomeMenuTableViewCell.swift */; };
 		3923DBC9206B238B005DC03E /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3923DBC8206B238B005DC03E /* MenuItem.swift */; };
 		395141B0207EBB71008DEC71 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395141AF207EBB71008DEC71 /* CharacterDetailViewController.swift */; };
 		395141B3207EBBC8008DEC71 /* CharacterDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395141B2207EBBC8008DEC71 /* CharacterDetailsView.swift */; };
+		396822612085592700226942 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396822602085592700226942 /* LoadingView.swift */; };
 		39741D32207BE2B000FD4DC8 /* CharactersApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39741D31207BE2B000FD4DC8 /* CharactersApiProtocol.swift */; };
 		39741D34207BE53100FD4DC8 /* CharactersApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39741D33207BE53100FD4DC8 /* CharactersApiProvider.swift */; };
 		39741D38207BE7FA00FD4DC8 /* CharactersBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39741D37207BE7FA00FD4DC8 /* CharactersBusiness.swift */; };
@@ -57,11 +60,14 @@
 		1637EB31BB0579FE38005578 /* Pods-StarWarsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarWarsUITests/Pods-StarWarsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		2957878004417D91555B190B /* Pods-StarWarsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarWarsTests/Pods-StarWarsTests.release.xcconfig"; sourceTree = "<group>"; };
 		2E4CF56DC34C0E01501AA356 /* Pods_StarWarsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarWarsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39036946208561D000E96E63 /* lightsaber.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lightsaber.json; sourceTree = "<group>"; };
+		39036947208561D000E96E63 /* lightsaber.aep */ = {isa = PBXFileReference; lastKnownFileType = file; path = lightsaber.aep; sourceTree = "<group>"; };
 		39037DBF207454A200B614E1 /* Stjldbl1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Stjldbl1.ttf; sourceTree = "<group>"; };
 		3923DBC6206B21B4005DC03E /* HomeMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuTableViewCell.swift; sourceTree = "<group>"; };
 		3923DBC8206B238B005DC03E /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		395141AF207EBB71008DEC71 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
 		395141B2207EBBC8008DEC71 /* CharacterDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsView.swift; sourceTree = "<group>"; };
+		396822602085592700226942 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		39741D31207BE2B000FD4DC8 /* CharactersApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersApiProtocol.swift; sourceTree = "<group>"; };
 		39741D33207BE53100FD4DC8 /* CharactersApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersApiProvider.swift; sourceTree = "<group>"; };
 		39741D37207BE7FA00FD4DC8 /* CharactersBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersBusiness.swift; sourceTree = "<group>"; };
@@ -73,6 +79,8 @@
 		39789EA22076D8E600F6C1A9 /* CharactersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCollectionViewCell.swift; sourceTree = "<group>"; };
 		397C24022073D44E007383DF /* MenuBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBusiness.swift; sourceTree = "<group>"; };
 		39931B0F2059EEFF00A3DAE8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		39A6ECE72080CD1B0023810D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		39A6ECEA2080CF850023810D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		39D516A820574F990030ADB6 /* StarWars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D516AB20574F990030ADB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39D516AD20574F990030ADB6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +141,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		39036945208561C100E96E63 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				39036947208561D000E96E63 /* lightsaber.aep */,
+				39036946208561D000E96E63 /* lightsaber.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		3923DBC5206B217C005DC03E /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +167,14 @@
 				395141B2207EBBC8008DEC71 /* CharacterDetailsView.swift */,
 			);
 			path = Characters;
+			sourceTree = "<group>";
+		};
+		3968225F2085591600226942 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				396822602085592700226942 /* LoadingView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		39741D30207BE29300FD4DC8 /* Characters */ = {
@@ -255,6 +280,7 @@
 		39D516D920574FB90030ADB6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				39036945208561C100E96E63 /* Animations */,
 				39D516DC20574FEA0030ADB6 /* Assets */,
 				39D516DB20574FD20030ADB6 /* Storyboard */,
 			);
@@ -314,6 +340,7 @@
 		39D516DF205750310030ADB6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3968225F2085591600226942 /* Components */,
 				395141B1207EBB94008DEC71 /* Characters */,
 				3923DBC5206B217C005DC03E /* Home */,
 			);
@@ -458,6 +485,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 39D5169F20574F990030ADB6;
 			productRefGroup = 39D516A920574F990030ADB6 /* Products */;
@@ -479,7 +507,9 @@
 				39037DC0207454A200B614E1 /* Stjldbl1.ttf in Resources */,
 				39D516B620574F990030ADB6 /* LaunchScreen.storyboard in Resources */,
 				39D516B320574F990030ADB6 /* Assets.xcassets in Resources */,
+				39036948208561D000E96E63 /* lightsaber.json in Resources */,
 				39D516B120574F990030ADB6 /* Main.storyboard in Resources */,
+				39036949208561D000E96E63 /* lightsaber.aep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,12 +540,14 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -675,6 +707,7 @@
 				395141B0207EBB71008DEC71 /* CharacterDetailViewController.swift in Sources */,
 				39741D3B207BEB4800FD4DC8 /* CharactersResponse.swift in Sources */,
 				39D516E3205750B70030ADB6 /* ApiProvider.swift in Sources */,
+				396822612085592700226942 /* LoadingView.swift in Sources */,
 				395141B3207EBBC8008DEC71 /* CharacterDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -715,6 +748,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				39D516B020574F990030ADB6 /* Base */,
+				39A6ECEA2080CF850023810D /* pt-BR */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -723,6 +757,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				39D516B520574F990030ADB6 /* Base */,
+				39A6ECE72080CD1B0023810D /* pt-BR */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -734,6 +769,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -791,6 +827,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
